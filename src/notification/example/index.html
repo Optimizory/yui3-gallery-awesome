@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NEW AWESOME NOTIFICATION</title>
+    <link rel="stylesheet" href="../assets/notification-core.css" />
+    <link rel="stylesheet" href="../assets/skins/sam/notification-skin.css" />
+    <script src="http://yui.yahooapis.com/3.4.1/build/yui/yui-min.js"></script>
+    <script src="../js/notification.js"></script>
+  </head>
+  <body class="yui3-skin-sam">
+    <h1>Awesome Notification Page</h1>
+    <div style="height: 300px;">
+      Lots of content ...
+    </div>
+  </body>
+  <script type="text/javascript">
+    YUI().use('event-base', 'notification', function (Y) {
+      Y.on('domready', function () {
+        var myNotification = new Y.A.Notification(),
+        Notice = Y.A.Notification;
+
+        myNotification.render();
+
+        myNotification.show('This is blocking', Notice.ICON_BLOCK);
+        Y.later(3000, this, function () {
+          myNotification.show('This is a kind of alarming message for 1000ms', Notice.ICON_WARN, 1000);
+        });
+      });
+    });
+  </script>
+</html>

@@ -1,0 +1,8 @@
+.yui3-notification {
+  display: inline-block;
+  position: absolute;
+}
+
+.yui3-notification-hidden {
+  visibility: hidden;
+}

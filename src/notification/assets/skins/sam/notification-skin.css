@@ -1,0 +1,54 @@
+.yui3-skin-sam .yui3-notification {
+  background-color: #FFF1A8;
+  border: 1px solid transparent;
+  -webkit-border-bottom-right-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.yui3-skin-sam .yui3-notification .yui3-notification-content {
+  background: #FFF1A8;
+  color: #555;
+  padding: 3px 7px;
+  font-weight: bold;
+}
+
+.yui3-skin-sam .yui3-notification-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  float: left;
+}
+
+.yui3-skin-sam .yui3-notification .none {
+  background: none ! important;
+  width: 0 ! important;
+  margin: 0 ! important;
+}
+
+.yui3-skin-sam .yui3-notification .blockicon {
+  background: url(../../images/block.gif) no-repeat;
+}
+
+.yui3-skin-sam.yui3-notification .alerticon {
+  background: url(../../images/alert.gif) no-repeat;
+}
+
+.yui3-skin-sam .yui3-notification .helpicon {
+  background: url(../../images/help.gif) no-repeat;
+}
+
+.yui3-skin-sam .yui3-notification .infoicon {
+  background: url(../../images/info.gif) no-repeat;
+}
+
+.yui3-skin-sam .yui3-notification .warnicon {
+  background: url(../../images/warn.gif) no-repeat;
+}
+
+.yui3-skin-sam .yui3-notification .tipicon {
+  background: url(../../images/tip.gif) no-repeat;
+}
