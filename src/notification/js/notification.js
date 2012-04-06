@@ -196,7 +196,7 @@ YUI.add('notification', function (Y) {
             Y.WidgetPositionAlign.TC
           ]
         }
-      },
+      }
     },
 
     ICON_NONE: 'none',
