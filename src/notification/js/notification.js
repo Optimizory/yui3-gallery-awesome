@@ -1,31 +1,26 @@
-YUI.add('notification', function (Y) {
+var Lang = Y.Lang,
+  Node = Y.Node,
+  isNumber = Lang.isNumber,
+  isBoolean = Lang.isBoolean,
+  BLANK = '&#160;',
+  _SHIM = Y.UA.ie && Y.UA.ie < 7,
 
-  var Lang = Y.Lang,
-      Node = Y.Node,
+  _CLASS_ICON = '_CLASS_ICON',
+  _CLASS_MESSAGE = '_CLASS_MESSAGE',
 
-      isNumber = Lang.isNumber,
-      isBoolean = Lang.isBoolean,
-      isString = Lang.isString,
+  _SELECTOR_ICON = '_SELECTOR_ICON',
+  _SELECTOR_MESSAGE = '_SELECTOR_MESSAGE',
 
-      BLANK = '&#160;',
+  _EVENT_WINDOW_RESIZE = '_EVENT_WINDOW_RESIZE',
+  _EVENT_WINDOW_SCROLL = '_EVENT_WINDOW_SCROLL',
 
-      _SHIM = Y.UA.ie && Y.UA.ie < 7,
+  ICON = 'icon',
+  MESSAGE = 'message',
 
-      _CLASS_ICON = '_CLASS_ICON',
-      _CLASS_MESSAGE = '_CLASS_MESSAGE',
+  _CLASS_PREV_ICON = null,
 
-      _SELECTOR_ICON = '_SELECTOR_ICON',
-      _SELECTOR_MESSAGE = '_SELECTOR_MESSAGE',
+  _AUTO_HIDE_TIMER = '_AUTO_HIDE_TIMER',
 
-      _EVENT_WINDOW_RESIZE = '_EVENT_WINDOW_RESIZE',
-      _EVENT_WINDOW_SCROLL = '_EVENT_WINDOW_SCROLL',
-
-      ICON = 'icon',
-      MESSAGE = 'message',
-
-      _CLASS_PREV_ICON = null,
-
-      _AUTO_HIDE_TIMER = '_AUTO_HIDE_TIMER',
   /**
    * TODO: write comment according to yui docs
    */
@@ -217,12 +212,4 @@ YUI.add('notification', function (Y) {
     }
   });
 
-  Y.namespace('A').Notification = Notification;
-
-}, '0.1', {requires: [
-  'widget',
-  'widget-position',
-  'widget-position-align',
-  'widget-position-constrain',
-  'event-resize'
-]});
+Y.namespace('A').Notification = Notification;
