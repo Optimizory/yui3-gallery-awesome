@@ -1,6 +1,6 @@
 ## YUI3 Awesome Gallery
 
-The YUI3 Awesome is official [Optimizory Technologies Pvt. Ltd.](http://optimizory.com) YUI3 widget gallery
+The YUI3 Awesome is unofficial YUI3 widget gallery ([Optimizory Technologies Pvt. Ltd.](http://optimizory.com)) 
 
 It contains some cool YUI3 widgets.
 
